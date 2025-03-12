@@ -14,7 +14,7 @@ const projects = [
     title: "BookFusion",
 description:"Book Fusion is a MERN stack web app for book enthusiasts, featuring user authentication, a curated book library, advanced search, and personalized recommendations. It also includes a blogging platform to write and explore blogs about books. Machine learning integration is in progress to enhance recommendations and user experience.",
     image: "https://img.freepik.com/free-vector/flat-world-book-day-landing-page-template_23-2149309092.jpg?ga=GA1.1.369964002.1736404008&semt=ais_hybrid",
-    githubUrl: "https://github.com/yourusername/ecommerce-redesign",
+    githubUrl: "https://github.com/000000000abhi/book",
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ description:"Book Fusion is a MERN stack web app for book enthusiasts, featuring
     description:
       "U and I is a MERN stack web app designed to support first-generation learners. It offers essential features like user authentication, personalized learning resources, progress tracking, and a collaborative community space. Future updates include integrating machine learning for tailored learning recommendations and skill development insights.",
     image: "https://img.freepik.com/free-photo/college-students-cramming-outdoor_23-2149649371.jpg?ga=GA1.1.369964002.1736404008&semt=ais_hybrid",
-    githubUrl: "https://github.com/yourusername/custom-cms",
+    githubUrl: "https://github.com/000000000abhi/backendd",
   },
   {
     id: 3,
@@ -30,7 +30,21 @@ description:"Book Fusion is a MERN stack web app for book enthusiasts, featuring
     description:
       "Smart Attendance System is a Python-based application built with Tkinter that automates attendance tracking. It utilizes the Haar Cascade Classifier for real-time face detection and recognition, ensuring accurate and efficient attendance management. The system includes a user-friendly interface, attendance logs, and customizable features for seamless integration into various environments.",
     image: "https://img.freepik.com/free-vector/hand-with-mobile-face-scan-man_24908-56384.jpg?ga=GA1.1.369964002.1736404008&semt=ais_hybrid",
-    githubUrl: "https://github.com/yourusername/ai-chatbot",
+    githubUrl: "https://github.com/000000000abhi/Face-recognition",
+  },
+  {
+    id: 4,
+    title: "Text Recognition",
+    description: "A computer vision-based project that extracts and processes text from images. Uses OCR (Optical Character Recognition) techniques for document digitization and text-based automation.",
+    image: "https://img.freepik.com/free-photo/college-students-cramming-outdoor_23-2149649371.jpg",
+    githubUrl: "https://github.com/000000000abhi/Text-Recognition",
+  },
+  {
+    id: 5,
+    title: "Food Delivery App",
+    description: "A full-stack food delivery application built with the MERN stack. It features a user-friendly UI, real-time order tracking, restaurant listings, and an optimized backend for smooth performance.",
+    image: "https://img.freepik.com/free-photo/college-students-cramming-outdoor_23-2149649371.jpg",
+    githubUrl: "https://github.com/000000000abhi/FOOD-del",
   },
 ]
 

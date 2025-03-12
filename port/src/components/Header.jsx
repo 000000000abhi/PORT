@@ -2,11 +2,13 @@ import React, { useState, useEffect } from "react"
 import { Link, useLocation } from "react-router-dom"
 import { useTheme } from "../contexts/ThemeContext"
 import { motion } from "framer-motion"
+import { Menu, X } from "lucide-react"
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
   const { isDarkMode, toggleTheme } = useTheme()
   const location = useLocation()
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -40,7 +42,17 @@ function Header() {
         >
           ABHI
         </Link>
-        <ul className="flex space-x-6 items-center">
+
+        {/* Hamburger Menu */}
+        <button
+          className="lg:hidden p-2 rounded-md focus:outline-none"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
+          {isMenuOpen ? <X size={28} className={isDarkMode ? "text-white" : "text-black"} /> : <Menu size={28} className={isDarkMode ? "text-white" : "text-black"} />}
+        </button>
+
+        {/* Desktop Nav */}
+        <ul className="hidden lg:flex space-x-6 items-center">
           {navItems.map((item) => (
             <li key={item}>
               <Link
@@ -85,9 +97,46 @@ function Header() {
           </li>
         </ul>
       </nav>
+
+      {/* Mobile Nav */}
+      <motion.div
+        initial={{ x: "100%" }}
+        animate={{ x: isMenuOpen ? 0 : "100%" }}
+        transition={{ duration: 0.3 }}
+        className={`fixed top-0 right-0 w-64 h-full bg-gray-800 text-white transform ${isMenuOpen ? "translate-x-0" : "translate-x-full"} lg:hidden`}
+      >
+        <button
+          className="absolute top-4 right-4 text-white"
+          onClick={() => setIsMenuOpen(false)}
+        >
+          <X size={28} />
+        </button>
+        <ul className="flex flex-col space-y-6 items-center mt-20">
+          {navItems.map((item) => (
+            <li key={item}>
+              <Link
+                to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
+                className="text-lg hover:text-gray-400 transition-colors duration-300"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {item}
+              </Link>
+            </li>
+          ))}
+          <li>
+            <motion.button
+              onClick={toggleTheme}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              className="p-2 rounded-full bg-white text-black transition-colors duration-300"
+            >
+              {isDarkMode ? "☀️" : "🌙"}
+            </motion.button>
+          </li>
+        </ul>
+      </motion.div>
     </motion.header>
   )
 }
 
 export default Header
-
