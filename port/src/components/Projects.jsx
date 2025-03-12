@@ -49,8 +49,8 @@ description:"Book Fusion is a MERN stack web app for book enthusiasts, featuring
 ]
 
 const codingProfiles = [
-  { name: "LeetCode", url: "https://leetcode.com/abhijeet_kumar27", solved: 970,rating :1872 },
-  { name: "CodeChef", url: "https://www.codechef.com/users/abhijeet73", rating: 1497 },
+  { name: "LeetCode", url: "https://leetcode.com/abhijeet_kumar27", solved: 1070,rating :1893 },
+  { name: "CodeChef", url: "https://www.codechef.com/users/abhijeet73", rating: 1491 },
   {name: "codeforces",url: "https://www.codechef.com/users/abhijeet73", rating: 1300}
 
 ]
@@ -75,11 +75,11 @@ function Portfolio() {
   }
 
   return (
-    <PageLayout title="My Portfolio">
+    <PageLayout title="">
       <div className="space-y-16">
         <section>
           <h2 className={`text-3xl font-bold mb-6 ${isDarkMode ? "text-gray-200" : "text-gray-800"}`}>
-            Featured Projects
+             Projects
           </h2>
           <Slider {...sliderSettings}>
             {projects.map((project) => (

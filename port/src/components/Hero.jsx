@@ -16,7 +16,7 @@ export default function Hero() {
           <div className="w-20 h-1 bg-blue-500" />
           <h1 className={`text-5xl lg:text-6xl font-bold leading-tight ${isDarkMode ? "text-white" : "text-gray-900"}`}>
             Hi, I'm Abhijeet, <br /> 
-            Web Developer & CP Enthusiast
+            Web Developer & CP Enthusiast,
           </h1>
           <p className={`text-lg ${isDarkMode ? "text-gray-400" : "text-gray-600"}`}>
             Passionate about building scalable web applications and solving complex algorithmic problems.

@@ -43,7 +43,7 @@ function Footer() {
         <div className="flex justify-center space-x-4 mb-4">
           {/* LinkedIn */}
           <a
-            href="#"
+            href="https://www.linkedin.com/in/abhijeet-ansal-9993a3275?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             className={`hover:text-gray-600 dark:hover:text-gray-400 transition-colors ${
               isDarkMode ? "text-gray-300" : "text-gray-800"
             }`}
@@ -54,7 +54,7 @@ function Footer() {
           </a>
           {/* Twitter */}
           <a
-            href="https://github.com/000000000abhi"
+            href="https://x.com/Abhijee12376284"
             className={`hover:text-gray-600 dark:hover:text-gray-400 transition-colors ${
               isDarkMode ? "text-gray-300" : "text-gray-800"
             }`}
@@ -65,7 +65,7 @@ function Footer() {
           </a>
           {/* Instagram */}
           <a
-            href="https://github.com/000000000abhi"
+            href="https://www.instagram.com/abhijeet_kumar27?igsh=ZTMzazQ5Zm5xanhx"
             className={`hover:text-gray-600 dark:hover:text-gray-400 transition-colors ${
               isDarkMode ? "text-gray-300" : "text-gray-800"
             }`}
