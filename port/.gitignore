@@ -10,8 +10,8 @@ lerna-debug.log*
 node_modules
 dist 
 .vercel
-favicon.io
-banner.jpg
+public/favicon.io
+src/assets/Banner.jpg
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
